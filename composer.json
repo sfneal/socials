@@ -1,11 +1,11 @@
 {
-    "name": "sfneal/php-package-boilerplate",
-    "description": "Boilerplate for PHP package repo's",
+    "name": "sfneal/socials",
+    "description": "Eloquent Model and extensions for Social media accounts",
     "keywords": [
         "sfneal",
-        "php-package-boilerplate"
+        "socials"
     ],
-    "homepage": "https://github.com/sfneal/php-package-boilerplate",
+    "homepage": "https://github.com/sfneal/socials",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,7 +16,7 @@
         }
     ],
     "require": {
-        "php": ">=5.6"
+        "php": ">=7.3"
     },
     "require-dev": {
         "phpunit/phpunit": ">=5.6.3",

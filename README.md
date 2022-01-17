@@ -1,19 +1,19 @@
-# Very short description of the package
+# Socials
 
-[![Packagist PHP support](https://img.shields.io/packagist/php-v/sfneal/php-package-boilerplate)](https://packagist.org/packages/sfneal/php-package-boilerplate)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/php-package-boilerplate.svg?style=flat-square)](https://packagist.org/packages/sfneal/php-package-boilerplate)
-[![Build Status](https://travis-ci.com/sfneal/php-package-boilerplate.svg?branch=master&style=flat-square)](https://travis-ci.com/sfneal/php-package-boilerplate)
-[![Quality Score](https://img.shields.io/scrutinizer/g/sfneal/php-package-boilerplate.svg?style=flat-square)](https://scrutinizer-ci.com/g/sfneal/php-package-boilerplate)
-[![Total Downloads](https://img.shields.io/packagist/dt/sfneal/php-package-boilerplate.svg?style=flat-square)](https://packagist.org/packages/sfneal/php-package-boilerplate)
+[![Packagist PHP support](https://img.shields.io/packagist/php-v/sfneal/socials)](https://packagist.org/packages/sfneal/socials)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/sfneal/socials.svg?style=flat-square)](https://packagist.org/packages/sfneal/socials)
+[![Build Status](https://travis-ci.com/sfneal/socials.svg?branch=master&style=flat-square)](https://travis-ci.com/sfneal/socials)
+[![Quality Score](https://img.shields.io/scrutinizer/g/sfneal/socials.svg?style=flat-square)](https://scrutinizer-ci.com/g/sfneal/socials)
+[![Total Downloads](https://img.shields.io/packagist/dt/sfneal/socials.svg?style=flat-square)](https://packagist.org/packages/sfneal/socials)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Eloquent Model and extensions for Social media accounts/
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require sfneal/php-package-boilerplate
+composer require sfneal/socials
 ```
 
 ## Usage
