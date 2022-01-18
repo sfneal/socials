@@ -22,7 +22,15 @@
     "require-dev": {
         "orchestra/testbench": "^6.24",
         "phpunit/phpunit": ">=5.6.3",
-        "scrutinizer/ocular": "^1.8"
+        "scrutinizer/ocular": "^1.8",
+        "sfneal/mock-models": "^0.9.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sfneal\\Socials\\Providers\\SocialsServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
