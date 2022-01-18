@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "php": ">=7.3"
+        "php": ">=7.3",
+        "sfneal/models": "^2.8"
     },
     "require-dev": {
         "phpunit/phpunit": ">=5.6.3",
@@ -24,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Sfneal\\PhpPackageBoilerplate\\": "src"
+            "Sfneal\\Socials\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sfneal\\PhpPackageBoilerplate\\Tests\\": "tests"
+            "Sfneal\\Socials\\Tests\\": "tests"
         }
     },
     "scripts": {
