@@ -1,11 +1,11 @@
 {
-    "name": "sfneal/php-package-boilerplate",
-    "description": "Boilerplate for PHP package repo's",
+    "name": "sfneal/socials",
+    "description": "Eloquent Model and extensions for Social media accounts",
     "keywords": [
         "sfneal",
-        "php-package-boilerplate"
+        "socials"
     ],
-    "homepage": "https://github.com/sfneal/php-package-boilerplate",
+    "homepage": "https://github.com/sfneal/socials",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,20 +16,33 @@
         }
     ],
     "require": {
-        "php": ">=5.6"
+        "php": ">=7.3",
+        "sfneal/models": "^2.8"
     },
     "require-dev": {
+        "orchestra/testbench": "^6.24",
         "phpunit/phpunit": ">=5.6.3",
-        "scrutinizer/ocular": "^1.8"
+        "scrutinizer/ocular": "^1.8",
+        "sfneal/mock-models": "^0.9.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sfneal\\Socials\\Providers\\SocialsServiceProvider"
+            ]
+        }
     },
     "autoload": {
         "psr-4": {
-            "Sfneal\\PhpPackageBoilerplate\\": "src"
+            "Sfneal\\Socials\\": "src",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sfneal\\PhpPackageBoilerplate\\Tests\\": "tests"
+            "Sfneal\\Socials\\Tests\\": "tests"
         }
     },
     "scripts": {
