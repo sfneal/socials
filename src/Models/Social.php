@@ -2,13 +2,17 @@
 
 namespace Sfneal\Socials\Models;
 
+use Database\Factories\SocialFactory;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
 use Sfneal\Socials\Builders\SocialBuilder;
 
 class Social extends Model
 {
+    use HasFactory;
+
     protected $table = 'social';
     protected $primaryKey = 'social_id';
 
@@ -29,7 +33,21 @@ class Social extends Model
      *
      * @var array
      */
-    protected $dates = ['created_at', 'updated_at', 'deleted_at', 'published_at'];
+    protected $dates = [
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+    /**
+     * Create a new factory instance for the model.
+     *
+     * @return SocialFactory
+     */
+    protected static function newFactory(): SocialFactory
+    {
+        return new SocialFactory();
+    }
 
     /**
      * Query Builder.
