@@ -3,7 +3,6 @@
 namespace Sfneal\Socials\Tests\Unit;
 
 
-use Illuminate\Support\Collection;
 use Sfneal\Socials\Builders\SocialBuilder;
 use Sfneal\Socials\Models\Social;
 use Sfneal\Socials\Tests\TestCase;
