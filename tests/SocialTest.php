@@ -1,11 +1,10 @@
 <?php
 
-namespace Sfneal\Socials\Tests\Unit;
+namespace Sfneal\Socials\Tests;
 
 
 use Sfneal\Socials\Builders\SocialBuilder;
 use Sfneal\Socials\Models\Social;
-use Sfneal\Socials\Tests\TestCase;
 use Sfneal\Testing\Utils\Traits\AssertModelBuilder;
 
 class SocialTest extends TestCase
