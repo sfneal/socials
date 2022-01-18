@@ -3,7 +3,7 @@
 namespace Sfneal\Socials\Tests;
 
 
-class TestCase
+class TestCase extends \Orchestra\Testbench\TestCase
 {
 
 }

@@ -20,6 +20,7 @@
         "sfneal/models": "^2.8"
     },
     "require-dev": {
+        "orchestra/testbench": "^6.24",
         "phpunit/phpunit": ">=5.6.3",
         "scrutinizer/ocular": "^1.8"
     },
