@@ -7,12 +7,10 @@ use Sfneal\Socials\Builders\SocialBuilder;
 use Sfneal\Socials\Models\Social;
 use Sfneal\Socials\Tests\TestCase;
 use Sfneal\Testing\Utils\Traits\AssertModelBuilder;
-use Sfneal\Testing\Utils\Traits\ModelProvider;
 
 class SocialTest extends TestCase
 {
     use AssertModelBuilder;
-    use ModelProvider;
 
     /**
      * Retrieve an array of Recipe models to be used as test params.
@@ -21,8 +19,11 @@ class SocialTest extends TestCase
      */
     protected function socialModelsProvider(): array
     {
-        return Social::query()
-            ->get()
+        $this->refreshApplication();
+
+        return Social::factory()
+            ->count(5)
+            ->create()
             ->map(function ($model) {
                 return [$model];
             })

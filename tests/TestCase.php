@@ -5,9 +5,10 @@ namespace Sfneal\Socials\Tests;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Sfneal\Socials\Providers\SocialsServiceProvider;
 
-class TestCase extends \Orchestra\Testbench\TestCase
+class TestCase extends OrchestraTestCase
 {
     use RefreshDatabase;
 
