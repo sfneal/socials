@@ -63,7 +63,7 @@ class Social extends Model
     /**
      * @return SocialBuilder|Builder
      */
-    public static function query()
+    public static function query(): SocialBuilder
     {
         return parent::query();
     }
