@@ -2,11 +2,10 @@
 
 namespace Sfneal\Socials\Models;
 
-use Sfneal\Socials\Builders\SocialBuilder;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
+use Sfneal\Socials\Builders\SocialBuilder;
 
 class Social extends Model
 {
