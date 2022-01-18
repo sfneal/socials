@@ -19,7 +19,7 @@ class CreateSocialTable extends Migration
             $table->increments('social_id');
             $table->string('title', 50);
             $table->string('icon', 30);
-            $table->string('link', 70);
+            $table->string('url', 70);
             $table->string('description', 150);
             $table->timestamps();
             $table->softDeletes();
