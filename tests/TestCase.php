@@ -2,7 +2,6 @@
 
 namespace Sfneal\Socials\Tests;
 
-
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
