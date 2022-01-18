@@ -15,7 +15,7 @@ class SocialTest extends TestCase
      *
      * @return array
      */
-    protected function socialModelsProvider(): array
+    public function socialModelsProvider(): array
     {
         $this->refreshApplication();
 
