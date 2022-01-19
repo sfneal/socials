@@ -35,14 +35,13 @@
     "autoload": {
         "psr-4": {
             "Sfneal\\Socials\\": "src",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-
+            "Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Sfneal\\Socials\\Tests\\": "tests"
+            "Sfneal\\Socials\\Tests\\": "tests",
+            "Database\\Seeders\\": "tests/Database/Seeders/"
         }
     },
     "scripts": {
