@@ -20,7 +20,7 @@ class CreateSocialTable extends Migration
             $table->string('title', 50);
             $table->string('icon', 30);
             $table->string('url', 70);
-            $table->string('description', 150);
+            $table->string('description', 150)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
