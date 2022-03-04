@@ -22,7 +22,6 @@ WORKDIR /var/www
 COPY --from=composer /var/www .
 
 # Copy Package source
-COPY config /var/www/config/
 COPY database /var/www/database/
 COPY src /var/www/src/
 COPY tests /var/www/tests/
