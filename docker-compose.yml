@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+    socials:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: "stephenneal/socials:${TAG}"
+        env_file: .env.docker
+        container_name: socials
+        tty: true
+        volumes:
+            - socials:/var/www
+        depends_on:
+            - socials-cache
+        networks:
+            - socials-network
+
+    socials-cache:
+        container_name: socials-cache
+        image: redis:6-alpine
+        command: ["redis-server", "--appendonly yes", "--port 9576"]
+        ports:
+            - "9576:9576"
+        volumes:
+            - socials-cache:/data
+        networks:
+            - socials-network
+
+
+# Networks
+networks:
+    socials-network:
+        driver: bridge
+
+# Volumes
+volumes:
+    socials:
+    socials-cache:
