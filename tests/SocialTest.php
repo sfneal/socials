@@ -10,24 +10,6 @@ class SocialTest extends TestCase
 {
     use AssertModelBuilder;
 
-    /**
-     * Retrieve an array of Recipe models to be used as test params.
-     *
-     * @return array
-     */
-    public function socialModelsProvider(): array
-    {
-        $this->refreshApplication();
-
-        return Social::factory()
-            ->count(5)
-            ->create()
-            ->map(function ($model) {
-                return [$model];
-            })
-            ->toArray();
-    }
-
     /** @test */
     public function builder_is_accessible()
     {
@@ -37,12 +19,12 @@ class SocialTest extends TestCase
     /**
      * @test
      *
-     * @param  Social  $social
-     *
-     * @dataProvider socialModelsProvider
+     * @dataProvider runTestFiveTimesProvider
      */
-    public function fillables_are_correct_types(Social $social)
+    public function fillables_are_correct_types()
     {
+        $social = Social::factory()->create();
+
         $this->assertIsInt($social->getKey());
 
         $this->assertIsString($social->title);
@@ -54,12 +36,12 @@ class SocialTest extends TestCase
     /**
      * @test
      *
-     * @param  Social  $social
-     *
-     * @dataProvider socialModelsProvider
+     * @dataProvider runTestFiveTimesProvider
      */
-    public function attributes_are_correct_types(Social $social)
+    public function attributes_are_correct_types()
     {
+        $social = Social::factory()->create();
+
         $this->assertIsInt($social->getKey());
 
         $this->assertIsString($social->channel_id);

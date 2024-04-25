@@ -43,4 +43,22 @@ abstract class TestCase extends OrchestraTestCase
         include_once __DIR__.'/../database/migrations/create_social_table.php.stub';
         (new \CreateSocialTable())->up();
     }
+
+    /**
+     * A data provider that doesn't return parameters but forces a test method to be run five times.
+     *
+     *  - useful when a dataProvider requires a query for a random attribute
+     *
+     * @return array[]
+     */
+    public static function runTestFiveTimesProvider(): array
+    {
+        return [
+            [],
+            [],
+            [],
+            [],
+            [],
+        ];
+    }
 }
