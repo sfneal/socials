@@ -52,7 +52,7 @@ class Social extends Model
     /**
      * Query Builder.
      *
-     * @param $query
+     * @param  $query
      * @return SocialBuilder
      */
     public function newEloquentBuilder($query)

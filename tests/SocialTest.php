@@ -38,6 +38,7 @@ class SocialTest extends TestCase
      * @test
      *
      * @param  Social  $social
+     *
      * @dataProvider socialModelsProvider
      */
     public function fillables_are_correct_types(Social $social)
@@ -54,6 +55,7 @@ class SocialTest extends TestCase
      * @test
      *
      * @param  Social  $social
+     *
      * @dataProvider socialModelsProvider
      */
     public function attributes_are_correct_types(Social $social)
