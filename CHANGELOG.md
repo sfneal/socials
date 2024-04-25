@@ -23,3 +23,4 @@ All notable changes to `socials` will be documented in this file
 ## 0.2.0 - 2024-04-25
 - cut support for PHP 7.3 & 7.4
 - bump test suite version constraints
+- add support for PHP 8.2 & 8.3
