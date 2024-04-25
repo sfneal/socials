@@ -9,10 +9,12 @@ use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
 use Sfneal\Socials\Builders\SocialBuilder;
 
+/**
+ * @property string $url
+ */
 class Social extends Model
 {
     use HasFactory;
-
     protected $table = 'social';
     protected $primaryKey = 'social_id';
 
@@ -52,7 +54,7 @@ class Social extends Model
     /**
      * Query Builder.
      *
-     * @param $query
+     * @param  $query
      * @return SocialBuilder
      */
     public function newEloquentBuilder($query)

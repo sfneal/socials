@@ -5,7 +5,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
-        image: "stephenneal/socials:${TAG}"
+        image: "stephenneal/socials:latest"
         env_file: .env.docker
         container_name: socials
         tty: true

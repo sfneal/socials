@@ -38,7 +38,9 @@ docker-compose down -v --remove-orphans
 
 # Build the image
 echo "Building image: stephenneal/socials:${TAG}"
+echo "Building image: stephenneal/socials:latest"
 docker build -t stephenneal/socials:"${TAG}" \
+    -t stephenneal/socials:latest \
     --build-arg php_composer_tag="${PHP_COMPOSER_TAG}" \
     --build-arg composer_flags="${COMPOSER_FLAGS}" \
      .
