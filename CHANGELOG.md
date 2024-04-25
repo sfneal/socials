@@ -17,3 +17,4 @@ All notable changes to `socials` will be documented in this file
 
 ## 0.1.3 - 2024-04-25
 - add support for new GitHub actions
+- add support for sfneal/models v3.0

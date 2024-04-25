@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": ">=7.3",
-        "sfneal/models": "^2.8"
+        "sfneal/models": "^2.8|^3.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.24",
