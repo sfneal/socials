@@ -23,7 +23,6 @@ class SocialTest extends TestCase
     public function fillables_are_correct_types()
     {
         $social = Social::factory()->create();
-        print_r($social->getAttributes());
 
         $this->assertIsInt($social->getKey());
 
