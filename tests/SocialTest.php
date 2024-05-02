@@ -2,6 +2,8 @@
 
 namespace Sfneal\Socials\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use Sfneal\Socials\Builders\SocialBuilder;
 use Sfneal\Socials\Models\Social;
 use Sfneal\Testing\Utils\Traits\AssertModelBuilder;
@@ -10,20 +12,18 @@ class SocialTest extends TestCase
 {
     use AssertModelBuilder;
 
-    /** @test */
+    #[Test]
     public function builder_is_accessible()
     {
         $this->assertBuilderIsAccessible(Social::query(), SocialBuilder::class);
     }
 
-    /**
-     * @test
-     *
-     * @dataProvider runTestFiveTimesProvider
-     */
+    #[Test]
+    #[DataProvider('runTestFiveTimesProvider')]
     public function fillables_are_correct_types()
     {
         $social = Social::factory()->create();
+        print_r($social->getAttributes());
 
         $this->assertIsInt($social->getKey());
 
@@ -33,11 +33,8 @@ class SocialTest extends TestCase
         $this->assertIsString($social->description);
     }
 
-    /**
-     * @test
-     *
-     * @dataProvider runTestFiveTimesProvider
-     */
+    #[Test]
+    #[DataProvider('runTestFiveTimesProvider')]
     public function attributes_are_correct_types()
     {
         $social = Social::factory()->create();
