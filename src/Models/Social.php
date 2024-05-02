@@ -9,9 +9,7 @@ use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
 use Sfneal\Socials\Builders\SocialBuilder;
 
-/**
- * @property string $url
- */
+
 class Social extends Model
 {
     use HasFactory;
@@ -28,6 +26,11 @@ class Social extends Model
         'icon',
         'url',
         'description',
+    ];
+
+    protected $appends = [
+        'channel_id',
+        'url_short'
     ];
 
     /**
@@ -78,7 +81,7 @@ class Social extends Model
     public function getChannelIdAttribute(): string
     {
         // Remove trailing slashes
-        $uri = trim($this->url, '/');
+        $uri = trim($this->attributes['url'], '/');
 
         // Split URL on '/' chars
         $pieces = explode('/', $uri);
@@ -98,7 +101,7 @@ class Social extends Model
             str_replace(
                 ['https://', 'www.'],
                 '',
-                $this->url
+                $this->attributes['url']
             )
         ))->truncate('20');
     }
