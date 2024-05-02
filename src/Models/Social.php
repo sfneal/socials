@@ -9,7 +9,6 @@ use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
 use Sfneal\Socials\Builders\SocialBuilder;
 
-
 class Social extends Model
 {
     use HasFactory;
@@ -30,7 +29,7 @@ class Social extends Model
 
     protected $appends = [
         'channel_id',
-        'url_short'
+        'url_short',
     ];
 
     /**
