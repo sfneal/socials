@@ -29,3 +29,7 @@ All notable changes to `socials` will be documented in this file
 ## 0.3.0 - 2024-05-02
 - add support for Laravel v11
 - cleanup phpunit testsuite
+
+
+## 0.4.0 - 2024-05-06
+- cut support for PHP 8.1
