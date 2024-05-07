@@ -2,12 +2,12 @@
 
 namespace Sfneal\Socials\Models;
 
-use Database\Factories\SocialFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Sfneal\Helpers\Strings\StringHelpers;
 use Sfneal\Models\Model;
 use Sfneal\Socials\Builders\SocialBuilder;
+use Sfneal\Socials\Factories\SocialFactory;
 
 class Social extends Model
 {
