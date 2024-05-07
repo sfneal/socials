@@ -1,6 +1,6 @@
 <?php
 
-namespace Database\Factories;
+namespace Sfneal\Socials\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Sfneal\Socials\Models\Social;
