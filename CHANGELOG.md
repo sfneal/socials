@@ -34,3 +34,7 @@ All notable changes to `socials` will be documented in this file
 ## 0.4.0 - 2024-05-06
 - cut support for PHP 8.1
 - bump sfneal/models to v4.0
+
+
+## 0.4.1 - 2024-05-07
+- refactor `SocialFactory` into `\Sfneal\Socials\Factories` namespace
